@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Asignment no 3</title>
+  </head>
+  <body>
+    <h2>choose your mobile :</h2>
+    <select onchange="check_by_key(this)" style="width: 200px; height: 30px">
+      <option selected disabled value="brand">select</option>
+      <option value="brand">brand</option>
+      <option value="model">modal</option>
+      <option value="price">price</option>
+      <option value="camera">camera</option>
+      <option value="ram">ram</option>
+      <option value="rom">rom</option>
+    </select>
+    <select
+      onchange="render_products()"
+      id="select"
+      style="width: 200px; height: 30px"
+    >
+    </select>
+    <div id="container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
